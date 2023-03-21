@@ -1,0 +1,19 @@
+{
+  "name": "pages-script-microservice-ts",
+  "version": "1.0.0",
+  "description": "Microservicio para la administracion de script de las paginas del sistema",
+  "main": "build/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopalomi/pages-script-microservice-ts.git"
+  },
+  "author": "Erick P.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eopalomi/pages-script-microservice-ts/issues"
+  },
+  "homepage": "https://github.com/eopalomi/pages-script-microservice-ts#readme"
+}
