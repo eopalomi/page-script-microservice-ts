@@ -11,3 +11,7 @@ const pgPool = new Pool({
     password: process.env.DB_PASSWORD,
     ssl: false
 })
+
+export const execQuery = (query:string, params: any)=>{
+    return pgPool.query(query, params);
+};
