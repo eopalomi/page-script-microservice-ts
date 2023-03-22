@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  page_microservice:
+    container_name: page_microservice
+    restart: 'no'
+    build: .
+    image: page-ms-ts
+    ports:
+      - "7070:7070"
+    networks:
+      - red-externa
+networks:
+  red-externa: 
+    name: frame_net
+    external: true

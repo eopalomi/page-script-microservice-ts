@@ -5,7 +5,7 @@
   "main": "build/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && cross-env NODE_ENV=production pm2 start ./build/app.js",
+    "start": "tsc && cross-env NODE_ENV=production pm2 start build/app.js && tail -f /dev/null",
     "start:local": "tsc && cross-env NODE_ENV=local node ./build/app.js"
   },
   "repository": {
