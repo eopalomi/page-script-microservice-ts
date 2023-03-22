@@ -1,6 +1,8 @@
 import express, {json} from 'express';
 import dotenv from 'dotenv';
-import {getPageController} from './controllers/page.controller';
+import bodyparser from 'body-parser';
+
+import {routes} from './routes/index.routes';
 
 const app = express();
 
@@ -8,9 +10,9 @@ dotenv.config({path:`.env.${process.env.NODE_ENV}`});
 
 const port = process.env.PORT;
 
-app.use(json());
+app.use(express.json());
 
-app.get('/load-page', getPageController)
+app.use(routes);
 
 app.listen(port, ()=>{
     console.log("Servidor ok corriendo en el puerto " + port)
